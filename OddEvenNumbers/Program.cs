@@ -4,26 +4,24 @@ List<int> Numbers = new List<int>() { 4, 1, 6, 3, 2, 9, 5, 7, 8, 0 };
 Console.WriteLine("Even Numbers: ");
 List<int> evenNumbers = EvenNumbers(Numbers); //gets all even numbers in a list
 
-
-// printing result: 4, 6, 2, 8, 0  
-foreach (var n in evenNumbers)
-{
-    Console.Write(n + " ");
-}
-Console.WriteLine();
+printNumbers(evenNumbers); // printing result: 4, 6, 2, 8, 0  
 
 
 Console.WriteLine("Odd Numbers: ");
 List<int> oddNumbers = OddNumbers(Numbers); // gets all odd numbers in a list
 
+PrintNumbers(oddNumbers); // printing result: 1, 3, 9, 5, 7
 
-// printing result: 1, 3, 9, 5, 7
-foreach (var n in oddNumbers)
+
+static void PrintNumbers(List<int> numbers)
 {
-    Console.Write(n + " ");
-}
-Console.WriteLine();
+    foreach (var n in numbers)
+    {
+        Console.Write(n + " ");
+    }
+    Console.WriteLine();
 
+}
 
 static List<int> OddNumbers(List<int> numbers)
 {
