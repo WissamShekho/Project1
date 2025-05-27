@@ -2,8 +2,10 @@
 List<int> Numbers = new List<int>() { 4, 1, 6, 3, 2, 9, 5, 7, 8, 0 };
 
 Console.WriteLine("Even Numbers: ");
-var evenNumbers = EvenNumbers(Numbers);
+List<int> evenNumbers = EvenNumbers(Numbers); //gets all even numbers in a list
 
+
+// printing result: 4, 6, 2, 8, 0  
 foreach (var n in evenNumbers)
 {
     Console.Write(n + " ");
@@ -12,8 +14,10 @@ Console.WriteLine();
 
 
 Console.WriteLine("Odd Numbers: ");
-var oddNumbers = OddNumbers(Numbers);
+List<int> oddNumbers = OddNumbers(Numbers); // gets all odd numbers in a list
 
+
+// printing result: 1, 3, 9, 5, 7
 foreach (var n in oddNumbers)
 {
     Console.Write(n + " ");
