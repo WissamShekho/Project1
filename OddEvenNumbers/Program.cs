@@ -35,10 +35,6 @@ static List<int> OddNumbers(List<int> numbers)
             {
                 Odds.Add(num);
             }
-            else
-            {
-                continue;
-            }
         }
         return Odds;
     }
@@ -59,10 +55,6 @@ static List<int> EvenNumbers(List<int> numbers)
             if (num % 2 == 0)
             {
                 Evens.Add(num);
-            }
-            else
-            {
-                continue;
             }
         }
         return Evens;
